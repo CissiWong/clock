@@ -54,3 +54,4 @@ After completing this assignment you should understand more about state in React
 Done with the main task? Here's some ideas for things to continue with:
 
 1. Implement so that it also shows minutes. 
+1. Just make one button both for start and stop and make it toggle between the states. 
