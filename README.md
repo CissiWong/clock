@@ -1,30 +1,18 @@
-# Sprint 3 – Build a Stopwatch 
+# Sprint 3 – Build a Clock
 
-In today's assignment we're going to practice using state in React by building a stopwatch. You're stopwatch should follow this design and primrily need to look good on mobile. 
-
-IMAGE/WIREFRAME
-
-
-Functionality:
-* Showing seconds and milliseconds. 
-* Start
-* Stop
-* Reset
+In today's assignment we're going to practice using state in React by building a clock, by following the official React tutorial.
 
 ## How to complete this assignment
 
 ### Project setup
 
-In the "code" folder in this assignment you'll find a copy of the Technigo React starter project which you can use as a base to complete this assignment! In the terminal, "cd" into that folder and install dependencies by running `npm install`. Once that's done, you can start the project by running `npm start`.
+In the "code" folder in this assignment you'll find a copy of the Technigo React starter project which you can use as a base to complete this assignment. In the terminal, "cd" into that folder and install dependencies by running `npm install`. Once that's done, you can start the project by running `npm start`.
 
-### Starter code
+### Follow the tutorial
 
-You will find starter code for this assignment on the [React.js](https://reactjs.org/) website. See "A Stateful Compentent". 
-Start by studying the code and implement in your project, then move on to the other functionality. 
+We'll be starting the tutorial from the "Adding Local State to a Class" section - https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class
 
-### Hints
-
-A few hints on how to implement the start and stop functionality. 
+The starter code in the /code/src/index.js in this assignment is built to reflect the project at that point in the tutorial, so you should be able to follow from there! It's a little more minimal than the usual setup we use, with multiple components.
 
 ### :books: Reading List
 
@@ -45,7 +33,7 @@ Learning how to think as a web developer is learning how to be an expert in prob
 
 ### :boom: Success!
 
-After completing this assignment you should understand more about state in React. You will also practice your overall skills in using React. 
+After completing this assignment you should understand more about state in React.
 
 ---
 
@@ -53,5 +41,7 @@ After completing this assignment you should understand more about state in React
 
 Done with the main task? Here's some ideas for things to continue with:
 
-1. Implement so that it also shows minutes. 
-1. Just make one button both for start and stop and make it toggle between the states. 
+1. Make a button which, when pressed, pauses the clock.
+1. Make another button which makes the clock run again.
+1. Use CSS to make the clock look fancy.
+1. Use CSS to make the page look different based on the time of day.
