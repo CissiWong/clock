@@ -13,11 +13,12 @@ body {
 }
 
 .clock.odd {
-  background-color: yellow;
+  background-color: black;
+  color: #fff;
 }
 
 .clock.even {
-  background-color: red;
+  background-color: white;
 }
 
 .time {
