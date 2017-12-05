@@ -12,15 +12,14 @@ class Clock extends React.Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() =>
-      this.tick(), 1000)
+    this.timerID = setInterval(this.tick, 1000)
   }
 
   componentWillUnmount() {
     clearInterval(this.timerID)
   }
 
-  tick() {
+  tick = () => {
     this.setState({
       date: new Date()
     })
@@ -35,17 +34,29 @@ class Clock extends React.Component {
       this.tick(), 1000)
   }
 
+  clockClassName = () => {
+    if (this.state.date.getMinutes() % 2 === 0) {
+      return "clock even"
+    } else {
+      return "clock odd"
+    }
+  }
+
   render() {
     return (
-      <div className="time">
-        <h3>current time:</h3>
-        <h1>{this.state.date.toLocaleTimeString()}.</h1>
-        <button onClick={this.tickStop}>
+      <div className={this.clockClassName()}>
+        <div className="time">
+          <h3>current time:</h3>
+          <h1>{this.state.date.toLocaleTimeString()}</h1>
+        </div>
+        <div className="buttons">
+          <button onClick={this.tickStop}>
           Stop
-        </button>
-        <button onClick={this.tickStart}>
+          </button>
+          <button onClick={this.tickStart}>
           Start
-        </button>
+          </button>
+        </div>
       </div>
     )
   }
