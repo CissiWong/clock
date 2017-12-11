@@ -2,6 +2,7 @@
   "name": "react-starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://CissiWong.github.io/assignment-clock",
   "dependencies": {
     "eslint-config-technigo": "^1.4.0",
     "react": "^16.0.0",
@@ -9,6 +10,8 @@
     "react-scripts": "1.0.16"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
